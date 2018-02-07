@@ -1,62 +1,119 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+   <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="style.css">
+      <script src="jquery.js"></script>
+      <script src="script.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
+      <script src="https://use.fontawesome.com/220d9b2b72.js"></script>
+      <title>Thomas Dion</title>
+   </head>
+   <body>
+      <div class="flex-grid text-center" id="page-content">
+         <div class="box-white" id="welcome">
+            <h1>Welcome to my profile</h1>
+            <h2>Sidebars are fun</h2>
+         </div>
+         <div class="box-white" id="about-me">
+            <h1>Thomas Dion</h1>
+            <h2>#1 Minecraft player</h2>
+            <img class="avatar-medium" src="images/avatar.jpg">
+            <p>First human with an unicellular brain, dont @ me</p>
+            <a class="btn-green" href="#">Find out more</a>
+            <h1></h1>
+         </div>
 
-  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Expanded" rel="stylesheet">
+         <div class="box-white text-center" id="shitpost">
+            <h1>Where I shitpost</h1>
+            <ul class="inline-list">
+               <li class="text-center">
+                  <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+               </li>
+               <li class="text-center"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+               <li class="text-center"><a href="#"><i class="fa fa-reddit" aria-hidden="true"></i> Reddit</a></li>
+            </ul>
+            <h1></h1>
+         </div>
 
-  <script src="https://use.fontawesome.com/220d9b2b72.js"></script>
+         <div class="box-white" id="movies" >
+            <h1>My favorite movies</h1>
+            <od>
+               <li class="movie-box">
+                  <h3>La haine</h3>
+                  <img src="images/la-haine-original1.jpg">
+                  <h2><i class="fa fa-star" aria-hidden="true"></i>8.5/10</h2>
+                  <p>Bunch a teenagers shoot cops and shit</p>
+               </li>
+               <li class="movie-box">
+                  <h3>Amélie</h3>
+                  <img src="images/amelie.jpg">
+                  <h2><i class="fa fa-star" aria-hidden="true"></i>7/10</h2>
+                  <p>The world is actually not that bad, the movie</p>
+               </li>
+               <li class="movie-box">
+                  <h3>Sharknado 4</h3>
+                  <img src="images/sharknado.jpg">
+                  <h2><i class="fa fa-star" aria-hidden="true"></i>-200/1</h2>
+                  <p>I really don't know about this one</p>
+               </li>
+            </od>
+            <h1></h1>
+         </div>
 
+         <div class="box-white" id="social">
+            <h1>Be social</h1>
+            <ul class="inline-list">
+               <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> like</a></li>
+               <li><a href="#"><i class="fa fa-share" aria-hidden="true"></i> share</a></li>
+               <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i> favorite</a></li>
+            </ul>
+            <h1></h1>
+         </div>
 
-  <title>Thomas Dion</title>
-</head>
-<body>
-<div class="container text-center">
-  <div class="box-white">
-    <h1>Thomas Dion</h1>
-    <h2>Minecraft player</h2>
-    <img class="avatar-medium" src="images/avatar.jpg">
-    <p>First human with an unicellular brain, dont @ me</p>
-    <a class="btn-green" href="#">Find out more</a>
-    <h1></h1>
-  </div>
+        <div class="box-white" id="projects">
+          <h1>My past projects (hire me)</h1>
+          <ul id="my-projects">
+            <li>
+              <a href="https://github.com/SomeMissingColon/cheese_finder_ruby/blob/master/README.md">
+                <img src="" alt="">Cheese finder
+              </a>
+            </li>
 
-  <div class="box-white text-center">
-    <ul class="inline-list">
-      <li class="text-center"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
-      <li class="text-center"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-      <li class="text-center"><a href="#"><i class="fa fa-reddit" aria-hidden="true"></i> Reddit</a></li>
-    </ul>
-  </div>
+            <li>
+              <a href="https://github.com/SomeMissingColon/KinoBot/blob/master/readme.md">
+                <img src="" alt="">KinoBot
+              </a>
+            </li>
 
-  <div class="box-white" >
-    <od>
-      <li class="movie-box">
-        <h3>La haine</h3>
-         <img src="images/la-haine-original1.jpg">
-         <p>Bunch a teenagers shoot cops and shit</p>
-      </li>
-      <li class="movie-box">
-        <h3>Amélie</h3>
-        <img src="images/amelie.jpg">
-        <p>The world is actually not that bad, the movie</p>
-      </li>
-      <li class="movie-box">
-        <h3>Sharknado 4</h3>
-        <img src="images/sharknado.jpg">
-        <p>I really don't know about that one</p>
-      </li>
-    </od>
-  </div>
+            <li>
+              <a href="https://github.com/SomeMissingColon/Discord-bot/blob/master/Releases/1.2/README">
+                <img src="" alt="">LeagueBot
+              </a>
+            </li>
 
-  <div class="box-white">
-    <ul class="inline-list">
-      <li><a href="#"><i class="fa fa-heart" aria-hidden="true"></i> like</a></li>
-      <li><a href="#"><i class="fa fa-share" aria-hidden="true"></i> share</a></li>
-      <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i> favorite</a></li>
-    </ul>
-  </div>
-  </div>
-</body>
+          </ul>
+        </div>
+      </div>
+
+      <div id="side-bar">
+         <ul>
+            <li id="about-me-btn" onclick="show_element('#about-me')">
+              <h3> About Me</h3>
+            </li>
+            <li id="shitpost-btn" onclick="show_element('#shitpost')">
+              <h3> Where I shitpost</h3>
+            </li>
+            <li id="movies-btn" onclick="show_element('#movies')">
+              <h3>  Movies I like</h3>
+            </li>
+            <li id="social-btn" onclick="show_element('#social')">
+              <h3>  Social stuff</h3>
+            </li>
+         </ul>
+      </div>
+   </body>
 </html>
+

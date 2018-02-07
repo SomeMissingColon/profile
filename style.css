@@ -15,20 +15,48 @@ li {
 a {
   text-decoration: none;
   color:rgb(50,50,50);
-  background-color: rgb(200,200,200);
   padding:10px;
   border-radius: 2px;
 }
 
 a:hover {
   color:rgb(20,20,20);
-  background-color: rgb(150,150,150);
 }
+
+.flex-grid {
+}
+
+#page-content {
+  margin-left: 300px;
+}
+
+#side-bar {
+  position: fixed;
+  width: 300px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(10,10,10,0.8);
+
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+#side-bar li {
+  margin:40px 0;
+  padding:10px 30px;
+  background-color:rgb(200,200,200);
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+#side-bar li:hover {
+  background-color:rgb(150,150,150)
+}
+
 .box-white {
   background-color:white;
   padding: 30px 30px;
   box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
-  width: 600px;
+  width: 700px;
   margin: 30px auto;
 }
 
@@ -36,6 +64,10 @@ a:hover {
   border-bottom: solid 2px rgb(55, 232, 100);
 }
 
+.box-white h2 {
+  font-size:20px;
+  color: black;
+}
 .avatar-medium {
   border-radius: 50%;
   box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
@@ -45,6 +77,14 @@ a:hover {
   margin:0px;
   padding:10px 20px;
   display:inline-block;
+}
+
+#about-me, #shitpost, #movies, #social {
+  display:none;
+}
+
+#welcome {
+  display:visible;
 }
 
 
@@ -61,14 +101,15 @@ a:hover {
 .movie-box img {
   border-radius:3px;
   position:relative;
-  right:222px;
   margin:20px;
+}
+
+.movie-box i {
+  color:#cece23;
 }
 
 .movie-box p {
   position:auto;
-  top:50px;
-  left:100px;
 }
 
 .btn-green {
